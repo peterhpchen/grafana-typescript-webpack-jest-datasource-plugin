@@ -1,0 +1,8 @@
+{
+  "type": "datasource",
+  "name": "Typescript Webpack Jest Demo",
+  "id": "peterhpchen-demo-datasource",
+
+  "metrics": true,
+  "annotations": false
+}
