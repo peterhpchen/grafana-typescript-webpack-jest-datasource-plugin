@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^23.3.1",
     "copy-webpack-plugin": "^4.5.2",
     "jest": "^23.4.2",
     "ts-jest": "^23.1.3",
