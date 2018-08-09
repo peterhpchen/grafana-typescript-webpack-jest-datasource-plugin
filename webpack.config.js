@@ -5,7 +5,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),  // 入口目錄
   entry: './module.ts', // 入口檔案為module.ts
   output: {
-    filename: 'module.js',  // Grafana將dist/module.js視為入口檔案
+    filename: 'module.js',  // Grafana將module.js視為入口檔案
   },
   module: {
     rules: [
