@@ -1,5 +1,7 @@
+import { QueryCtrl } from "app/plugins/sdk";
+
 class DemoDatasource {}
-class DemoQueryCtrl {}
+class DemoQueryCtrl extends QueryCtrl {}
 class DemoConfigCtrl {}
 
 export {
