@@ -22,6 +22,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([ // 將靜態檔案複製到目標資料夾中
       './plugin.json',
+      './partials/*',
     ]),
   ],
 };

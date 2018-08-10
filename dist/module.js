@@ -86,6 +86,18 @@ define(["app/plugins/sdk"], function(__WEBPACK_EXTERNAL_MODULE_app_plugins_sdk__
 /************************************************************************/
 /******/ ({
 
+/***/ "./config_ctrl.ts":
+/*!************************!*\
+  !*** ./config_ctrl.ts ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nexports.__esModule = true;\r\nvar DemoConfigCtrl = /** @class */ (function () {\r\n    function DemoConfigCtrl() {\r\n    }\r\n    DemoConfigCtrl.templateUrl = 'partials/config.html';\r\n    return DemoConfigCtrl;\r\n}());\r\nexports[\"default\"] = DemoConfigCtrl;\r\n\n\n//# sourceURL=webpack:///./config_ctrl.ts?");
+
+/***/ }),
+
 /***/ "./module.ts":
 /*!*******************!*\
   !*** ./module.ts ***!
@@ -94,7 +106,7 @@ define(["app/plugins/sdk"], function(__WEBPACK_EXTERNAL_MODULE_app_plugins_sdk__
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    }\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nexports.__esModule = true;\r\nvar sdk_1 = __webpack_require__(/*! app/plugins/sdk */ \"app/plugins/sdk\");\r\nvar DemoDatasource = /** @class */ (function () {\r\n    function DemoDatasource() {\r\n    }\r\n    return DemoDatasource;\r\n}());\r\nexports.Datasource = DemoDatasource;\r\nvar DemoQueryCtrl = /** @class */ (function (_super) {\r\n    __extends(DemoQueryCtrl, _super);\r\n    function DemoQueryCtrl() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    return DemoQueryCtrl;\r\n}(sdk_1.QueryCtrl));\r\nexports.QueryCtrl = DemoQueryCtrl;\r\nvar DemoConfigCtrl = /** @class */ (function () {\r\n    function DemoConfigCtrl() {\r\n    }\r\n    return DemoConfigCtrl;\r\n}());\r\nexports.ConfigCtrl = DemoConfigCtrl;\r\n\n\n//# sourceURL=webpack:///./module.ts?");
+eval("\r\nvar __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    }\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nexports.__esModule = true;\r\nvar sdk_1 = __webpack_require__(/*! app/plugins/sdk */ \"app/plugins/sdk\");\r\nvar config_ctrl_ts_1 = __webpack_require__(/*! ./config_ctrl.ts */ \"./config_ctrl.ts\");\r\nexports.ConfigCtrl = config_ctrl_ts_1[\"default\"];\r\nvar DemoDatasource = /** @class */ (function () {\r\n    function DemoDatasource() {\r\n    }\r\n    return DemoDatasource;\r\n}());\r\nexports.Datasource = DemoDatasource;\r\nvar DemoQueryCtrl = /** @class */ (function (_super) {\r\n    __extends(DemoQueryCtrl, _super);\r\n    function DemoQueryCtrl() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    return DemoQueryCtrl;\r\n}(sdk_1.QueryCtrl));\r\nexports.QueryCtrl = DemoQueryCtrl;\r\n\n\n//# sourceURL=webpack:///./module.ts?");
 
 /***/ }),
 

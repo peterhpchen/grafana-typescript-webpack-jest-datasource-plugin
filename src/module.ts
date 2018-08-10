@@ -1,8 +1,8 @@
 import { QueryCtrl } from "app/plugins/sdk";
+import DemoConfigCtrl from './config_ctrl.ts';
 
 class DemoDatasource {}
 class DemoQueryCtrl extends QueryCtrl {}
-class DemoConfigCtrl {}
 
 export {
     DemoDatasource as Datasource,
