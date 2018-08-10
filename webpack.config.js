@@ -6,6 +6,7 @@ module.exports = {
   entry: './module.ts', // 入口檔案為module.ts
   output: {
     filename: 'module.js',  // Grafana將module.js視為入口檔案
+    libraryTarget: 'amd'  // Grafana是用amd的方式引入外部module
   },
   module: {
     rules: [
@@ -15,6 +16,9 @@ module.exports = {
       },
     ],
   },
+  externals: [  // 由sdk mocks引入的module不需要打包，由外部引入即可
+    'app/plugins/sdk',
+  ],
   plugins: [
     new CopyWebpackPlugin([ // 將靜態檔案複製到目標資料夾中
       './plugin.json',
