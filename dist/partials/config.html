@@ -1,1 +1,10 @@
-<h3 class="page-heading">I am custom config.</h3>
+<datasource-http-settings
+  current="ctrl.current"
+  suggest-url="http://localhost:8080"
+></datasource-http-settings>
+
+<h3 class="page-heading">Custom Header</h3>
+<div class="gf-form">
+  <span class="gf-form-label width-7">Custom Input</span>
+  <input class="gf-form-input max-width-21" type="text" ng-model='ctrl.current.jsonData.customInput' placeholder="custom input" required></input>
+</div>

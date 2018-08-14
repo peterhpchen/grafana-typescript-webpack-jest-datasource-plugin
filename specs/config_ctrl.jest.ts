@@ -8,4 +8,11 @@ describe('DemoConfigCtrl', () => {
       expect(DemoConfigCtrl.templateUrl).toBeTruthy();
     });
   });
+  describe('init', () => {
+    it('should have customInput default value', () => {
+      DemoConfigCtrl.prototype.current = {jsonData: {}};
+      const ctrl = new DemoConfigCtrl();
+      expect(ctrl.current.jsonData.customInput).toBe('default');
+    })
+  });
 });

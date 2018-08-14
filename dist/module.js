@@ -94,7 +94,7 @@ define(["app/plugins/sdk"], function(__WEBPACK_EXTERNAL_MODULE_app_plugins_sdk__
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nexports.__esModule = true;\r\nvar DemoConfigCtrl = /** @class */ (function () {\r\n    function DemoConfigCtrl() {\r\n    }\r\n    DemoConfigCtrl.templateUrl = 'partials/config.html';\r\n    return DemoConfigCtrl;\r\n}());\r\nexports[\"default\"] = DemoConfigCtrl;\r\n\n\n//# sourceURL=webpack:///./config_ctrl.ts?");
+eval("\r\nexports.__esModule = true;\r\nvar DemoConfigCtrl = /** @class */ (function () {\r\n    function DemoConfigCtrl() {\r\n        this.current.jsonData.customInput = this.current.jsonData.customInput || 'default';\r\n    }\r\n    DemoConfigCtrl.templateUrl = 'partials/config.html';\r\n    return DemoConfigCtrl;\r\n}());\r\nexports[\"default\"] = DemoConfigCtrl;\r\n\n\n//# sourceURL=webpack:///./config_ctrl.ts?");
 
 /***/ }),
 
