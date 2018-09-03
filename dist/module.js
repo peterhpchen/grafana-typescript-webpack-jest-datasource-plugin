@@ -86,6 +86,18 @@ define(["app/plugins/sdk"], function(__WEBPACK_EXTERNAL_MODULE_app_plugins_sdk__
 /************************************************************************/
 /******/ ({
 
+/***/ "./datasource.ts":
+/*!***********************!*\
+  !*** ./datasource.ts ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\n///<reference path=\"../node_modules/grafana-sdk-mocks/app/headers/common.d.ts\" />\r\nexports.__esModule = true;\r\nvar DemoDatasource = /** @class */ (function () {\r\n    function DemoDatasource() {\r\n    }\r\n    DemoDatasource.prototype.query = function () {\r\n        throw new Error(\"Query Support not implemented yet.\");\r\n    };\r\n    DemoDatasource.prototype.annotationQuery = function () {\r\n        throw new Error(\"Annotation Support not implemented yet.\");\r\n    };\r\n    DemoDatasource.prototype.metricFindQuery = function () {\r\n        throw new Error(\"Template Variable Support not implemented yet.\");\r\n    };\r\n    DemoDatasource.prototype.testDatasource = function () {\r\n        throw new Error(\"Template Variable Support not implemented yet.\");\r\n    };\r\n    return DemoDatasource;\r\n}());\r\nexports[\"default\"] = DemoDatasource;\r\n\n\n//# sourceURL=webpack:///./datasource.ts?");
+
+/***/ }),
+
 /***/ "./module.ts":
 /*!*******************!*\
   !*** ./module.ts ***!
@@ -94,7 +106,7 @@ define(["app/plugins/sdk"], function(__WEBPACK_EXTERNAL_MODULE_app_plugins_sdk__
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    }\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nexports.__esModule = true;\r\nvar sdk_1 = __webpack_require__(/*! app/plugins/sdk */ \"app/plugins/sdk\");\r\nvar DemoDatasource = /** @class */ (function () {\r\n    function DemoDatasource() {\r\n    }\r\n    return DemoDatasource;\r\n}());\r\nexports.Datasource = DemoDatasource;\r\nvar DemoQueryCtrl = /** @class */ (function (_super) {\r\n    __extends(DemoQueryCtrl, _super);\r\n    function DemoQueryCtrl() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    return DemoQueryCtrl;\r\n}(sdk_1.QueryCtrl));\r\nexports.QueryCtrl = DemoQueryCtrl;\r\nvar DemoConfigCtrl = /** @class */ (function () {\r\n    function DemoConfigCtrl() {\r\n    }\r\n    return DemoConfigCtrl;\r\n}());\r\nexports.ConfigCtrl = DemoConfigCtrl;\r\n\n\n//# sourceURL=webpack:///./module.ts?");
+eval("\r\nvar __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    }\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nexports.__esModule = true;\r\nvar sdk_1 = __webpack_require__(/*! app/plugins/sdk */ \"app/plugins/sdk\");\r\nvar datasource_ts_1 = __webpack_require__(/*! ./datasource.ts */ \"./datasource.ts\");\r\nexports.Datasource = datasource_ts_1[\"default\"];\r\nvar DemoQueryCtrl = /** @class */ (function (_super) {\r\n    __extends(DemoQueryCtrl, _super);\r\n    function DemoQueryCtrl() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    return DemoQueryCtrl;\r\n}(sdk_1.QueryCtrl));\r\nexports.QueryCtrl = DemoQueryCtrl;\r\nvar DemoConfigCtrl = /** @class */ (function () {\r\n    function DemoConfigCtrl() {\r\n    }\r\n    return DemoConfigCtrl;\r\n}());\r\nexports.ConfigCtrl = DemoConfigCtrl;\r\n\n\n//# sourceURL=webpack:///./module.ts?");
 
 /***/ }),
 
